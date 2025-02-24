@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;     
+            background-image: url('autum.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+    }
+    .container { 
+            border-radius: 8px;
+            border: 2px ;
+            padding: 20px;
+            width: 550px;
+}
+    .blur{
+  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 2px ;
+  border-radius: 5px;
+}
+
+  </style>
+  <body>
+    
+  <form action="show.php" method="post">
+
+
+<div class="container"><center>
+<table   width="70%" border="0" cellpadding="8" cellspacing="4" class="blur">
+      <tr bgcolor= "">
+  	  <td colspan="3" align="center"><font color="973131"><h1><b>Student Biography</b></h1></font>
+  	  </td>
+      </tr>
+  	<tr>
+  	<td >ชื่อ-สกุล</td>
+  	  <td align="left">
+        <select name="initial">
+            <option value="1">นาย
+            <option value="2">นาง
+            <option value="3">นางสาว
+       </select>
+            <input type="text" name="name" size="39" maxlength="50">
+  	  </td>
+      </tr>
+  	<tr>
+    <td>เพศ</td>
+  	  <td>
+            <select name="sex">
+                 <option value="1">ชาย
+                 <option value="2">หญิง
+  			   <option value="3">อื่นๆ
+            </select>
+        </td>
+        <tr>
+        <td>อุปกรณ์ที่ใช้</td>
+  	  <td>
+            <input type="radio" name="tool" value="PC" checked>PC
+            <input type="radio" name="tool" value="Mobile">Mobile
+            <input type="radio" name="tool" value="Notebook">Notebook
+            <input type="radio" name="tool" value="Macbook">Macbook
+
+  	  </td>
+      </tr>
+  	<tr>
+        <td>Email</td>
+        <td align="left"><input type="email" name="email" size="50" maxlength="50"></td>
+      </tr>
+      <tr>
+        <td>Username</td>
+        <td align="left"><input type="text" name="Username" size="50" maxlength="50"></td>
+      </tr>
+      <tr>
+        <td>Password</td>
+        <td align="left"><input type="password" name="Password" size="50" maxlength="50"></td>
+      </tr>
+      <tr>
+        <td>Confirm password</td>
+        <td align="left"><input type="password" name="Password" size="50" maxlength="50"></td>
+      </tr>
+  	<tr>
+
+  	  <td colspan = "2" align="center">
+        <input type="reset" name="reset" value="&nbsp;Reset&nbsp;">
+        <button  class="button"  name="submit" type="submit" value ="Submit"><span>submit</span></button>
+         
+    </td>     
+      </tr>
+    </table>
+
+
+  </center>
+</div>
+  </body>
+</html>
